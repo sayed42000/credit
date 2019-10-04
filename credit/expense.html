@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Income & Expense</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="signup">
+    <div class="container">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="addcredit.html">Add Credit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="expense.html">Add Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
+        <center>
+            <div class="card" style="width: 38rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Add Your Expense Here</h5>
+                    <form method="POST">
+                        <div class="form-group row">
+                            <label for="staticSubject" class="col-sm-2 col-form-label">Subject</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="staticSubject" value="Subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputAmount" class="col-sm-2 col-form-label">Amount</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="inputAmount" placeholder="Amount" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="submit" class="btn btn-danger" name="expense" value="Add Expense">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </center>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>
